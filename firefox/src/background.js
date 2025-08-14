@@ -55,7 +55,7 @@ function request_listener(details) {
 			let modifiedContent = text;
 
 			modifiedContent = modifiedContent.replace(/{canToggleTyping:!1,isToggledToTyping:!1}/g, "{canToggleTyping:!0,isToggledToTyping:e.typingEnabled}"); // Replace all instances of "{canToggleTyping:!1,isToggledToTyping:!1}" with "{canToggleTyping:!0,isToggledToTyping:e.typingEnabled}"
-			modifiedContent = modifiedContent.replaceFromTo('case"DECREMENT_ONE_HEART":{', 'break', '');
+			//modifiedContent = modifiedContent.replaceFromTo('case"DECREMENT_ONE_HEART":{', 'break', '');
 
 			if (!type_1_uploaded){
 				upload_to_firebase(fileName, modifiedContent);
